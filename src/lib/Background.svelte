@@ -12,7 +12,7 @@ $: style = `background-image: url("${image.src}");`
 
 <div class="background" {style}>
 <div class="attribution">
-    Photo by <a href="{image.attribtion}"> { image.name } on 
+    Photo by <a href="{image.attribution_url}"> { image.name } </a> on 
     <a href="{image.unsplash_url}"> Unsplash </a>
 </div>
 </div>
@@ -20,6 +20,7 @@ $: style = `background-image: url("${image.src}");`
 <style>
 div.background {
     z-index: -999;
+    pointer-events: none;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -29,7 +30,6 @@ div.background {
 }
 
 div.attribution {
-    position: absolute;
     bottom: 5px;
     right: 5px;
     background-color: rgba(0,0,0,0.8);
