@@ -23,12 +23,18 @@
   }
 </script>
 
-<div>
-  {hours}:{minutes}:{seconds}
+<div class="overlay">
+  <div class="timer"> {hours}:{minutes}:{seconds} </div>
 </div>
 
 <style>
- div {
+ .timer {
      font-size: 4em;
+ }
+ 
+ .overlay {
+     background-color: rgba(0,0,0,.8);
+     padding: 1em;
+     border-radius: 5px;
  }
 </style>
