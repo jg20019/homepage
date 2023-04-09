@@ -26,10 +26,6 @@
 <div class="timer"> {hours}:{minutes}:{seconds} </div>
 
 <style>
- div {
-     pointer-events: none;
- }
-
  .timer {
      font-size: 4em;
      background-color: rgba(0,0,0,.8);
