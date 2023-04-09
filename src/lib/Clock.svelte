@@ -59,7 +59,7 @@
 
 <style>
  .container {
-     font-size: 2em;
+     font-size: 2.5em;
      padding: 0.5em;
      border-radius: 5px;
      text-align: center;
