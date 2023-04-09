@@ -2,10 +2,39 @@
   import { onMount } from "svelte";
 
   let time = new Date()
+  let months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ]
+
+  let weekdays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ]
 
   $: hours = zeroPad(time.getHours())
   $: minutes = zeroPad(time.getMinutes())
   $: seconds = zeroPad(time.getSeconds())
+
+  $: weekday = weekdays[time.getDay()]
+  $: month = months[time.getMonth()]
+  $: date = time.getDate()
+  $: year = time.getFullYear()
 
 
   onMount(() => {
@@ -23,10 +52,13 @@
   }
 </script>
 
-<div class="timer"> {hours}:{minutes}:{seconds} </div>
+<div class="container">
+    <div> {weekday} {month} {date}, {year} </div>
+    <div> {hours}:{minutes}:{seconds} </div>
+</div>
 
 <style>
- .timer {
+ .container {
      font-size: 4em;
      background-color: rgba(0,0,0,.8);
      padding: 0.5em;
