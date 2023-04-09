@@ -7,8 +7,10 @@
 
 <style>
 main {
+    padding-top: 1em;
     background-color: #111;
-    max-width: 25%;
+    min-width: 33%;
+    max-width: 33%;
     min-height: 100%;
     position: absolute;
     top: 0;
