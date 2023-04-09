@@ -5,8 +5,8 @@ export let unsplash_url
 </script>
 
 <div class="attribution">
-    Photo by <a href="{attribution_url}"> { creator } </a> on 
-    <a href="{unsplash_url}"> Unsplash </a>
+    Photo by <a target="_blank" href="{attribution_url}"> { creator } </a> on 
+    <a target="_blank" href="{unsplash_url}"> Unsplash </a>
 </div>
 
 <style>
