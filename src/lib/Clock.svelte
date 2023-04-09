@@ -59,10 +59,10 @@
 
 <style>
  .container {
-     font-size: 4em;
-     background-color: rgba(0,0,0,.8);
+     font-size: 2em;
      padding: 0.5em;
      border-radius: 5px;
+     text-align: center;
  }
  
 </style>
